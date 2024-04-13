@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SEO Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./scripts.js"></script>
+</head>
+
+<body>
+    <h1>SEO Creator</h1>
+    <button onclick="back()">Back</button>
+    <button onclick="next()">Next</button>
+    <div id="data">
+        {data}
+    </div>
+</body>
+
+</html>

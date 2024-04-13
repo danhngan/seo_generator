@@ -1,0 +1,37 @@
+.content.hidden {
+    display: none;
+}
+
+.content.cur {
+    display: block;
+}
+
+.outline {
+    background-color: #fff;
+    color: #000;
+}
+
+.knowledge {
+    background-color: #34bdf371;
+    color: #000;
+}
+
+.model_output {
+    background-color: #f3e03471;
+    color: #000;
+}
+
+.ud_knowledge {
+    background-color: #d034f371;
+    color: #000000;
+}
+
+.ud_output {
+    background-color: #77f33471;
+    color: #000;
+}
+
+.web_output {
+    background-color: #3457f35e;
+    color: #000;
+}

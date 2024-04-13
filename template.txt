@@ -1,0 +1,8 @@
+<div id="content_{_id}" class="content {cur_state}">
+    <div id="outline_{_id}" class="outline">{outline}</div>
+    <div id="model_output_{_id}" class="model_output">{model_output}</div>
+    <div id="ud_output_{_id}" class="ud_output">{ud_output}</div>
+    <div id="web_output_{_id}" class="web_output">{web_output}</div>
+    <div id="knowledge_{_id}" class="knowledge">{knowledge}</div>
+    <div id="ud_knowledge_{_id}" class="ud_knowledge">{ud_knowledge}</div>
+</div>

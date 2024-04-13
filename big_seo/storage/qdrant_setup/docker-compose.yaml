@@ -1,0 +1,40 @@
+version: '3.1'
+services:
+  qdrant:
+    image: qdrant/qdrant
+    restart: always
+    ports:
+      - 6333:6333
+      - 6334:6334
+    networks:
+      - web
+    volumes:
+      - qdrant:/qdrant/storage:z
+      - qdrant-tls:/qdrant/tls:z
+      - qdrant-config:/qdrant/config:z
+  
+
+volumes:
+  qdrant:
+    driver: local
+    driver_opts:
+      type: none
+      device: "./data"
+      o: bind
+  qdrant-tls:
+    driver: local
+    driver_opts:
+      type: none
+      device: "./tls"
+      o: bind
+  qdrant-config:
+    driver: local
+    driver_opts:
+      type: none
+      device: "./config"
+      o: bind
+
+
+networks:
+  web:
+    driver: bridge
