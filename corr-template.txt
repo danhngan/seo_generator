@@ -1,0 +1,6 @@
+<div class="content cur">
+{gen_content}
+</div>
+<div class="knowledge hidden" id="all-knowledge">
+{global_knowledge}
+</div>

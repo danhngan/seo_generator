@@ -16,6 +16,10 @@
     color: #000;
 }
 
+.knowledge.hidden {
+    display: none
+}
+
 .model_output {
     background-color: #f3e03471;
     color: #000;

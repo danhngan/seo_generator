@@ -1,0 +1,44 @@
+.content.hidden {
+    display: none;
+}
+
+.content.cur {
+    display: block;
+}
+
+#placeholder {
+    height: 170px;
+    background-color: #ec9df8;
+    border-style: solid;
+    overflow: scroll;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.knowledge {
+    background-color: #34bdf371;
+    color: #000;
+}
+
+.knowledge.hidden {
+    display: none
+}
+
+.gen-content {
+    background-color: #ff000066
+}
+
+.gen-content.med {
+    background-color: #ffff0066
+}
+
+
+.gen-content.high {
+    background-color: #00fff066
+}
+
+
+.gen-content.veryHigh {
+    background-color: #00ff0066
+}

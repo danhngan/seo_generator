@@ -5,3 +5,4 @@ external_res
 big_seo/storage/qdrant_setup/data
 test_output
 geckodriver.log
+.vscode

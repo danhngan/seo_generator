@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SEO Creator</title>
+    <link rel="stylesheet" href="corr-style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./corr-scripts.js"></script>
+</head>
+
+<body>
+    <h1>SEO Creator</h1>
+    <div id="placeholder"></div>
+    <div id="data">
+        {data}
+    </div>
+</body>
+
+</html>
