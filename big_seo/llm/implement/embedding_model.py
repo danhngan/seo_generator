@@ -1,4 +1,4 @@
-from big_seo.llm_arch.embedding_model import IEmbedding
+from big_seo.llm.embedding_model import IEmbedding
 from vertexai.language_models import TextEmbeddingModel, TextEmbeddingInput
 from llama_index.core.embeddings import BaseEmbedding
 

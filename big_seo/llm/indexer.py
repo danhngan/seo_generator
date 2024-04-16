@@ -3,8 +3,8 @@
 
 from dataclasses import dataclass
 from abc import ABC, abstractmethod
-from big_seo.llm_arch.core.common import Document
-from big_seo.llm_arch.embedding_model import IEmbedding
+from big_seo.llm.core.common import Document
+from big_seo.llm.embedding_model import IEmbedding
 from big_seo.storage.vector_db import IVectorDB
 
 

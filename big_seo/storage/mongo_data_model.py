@@ -1,7 +1,6 @@
 import os
 from big_seo.crawler.core import WebPage
 from big_seo.storage.mongo_constants import DEFAULT_DB, DEFAULT_WEB_PAGES_COLLECTION
-from big_seo.llm_arch.indexer import IIndexMapper
 
 
 from mongoengine import (connect,
