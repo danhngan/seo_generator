@@ -75,6 +75,8 @@ class UpToDateSEParser:
         url_prefix = 'https://www.uptodate.com'
 
         for res in search_res:
+            if 'searchResults' not in res:
+                continue
             page = res['searchResults'][0]
             yield web_page_data_controller.create(page_id=uuid.uuid4().bytes,
                                                   url=url_prefix +
