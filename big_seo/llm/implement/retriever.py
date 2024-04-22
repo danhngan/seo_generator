@@ -1,13 +1,10 @@
 from abc import ABC, abstractmethod
 
-from big_seo.llm_arch.retriever import IRetriever
-from big_seo.llm_arch.indexer import (IEmbedding,
-                                      IIndexer,
-                                      IIndexMapper,
-                                      IIndexMapperCell,
-                                      IIndexMapperCreator)
+from big_seo.llm.retriever import IRetriever
+from big_seo.llm.indexer import (IEmbedding,
+                                 IIndexer)
 
-from big_seo.llm_arch.core.common import IPrompt, Document
+from big_seo.llm.core.common import IPrompt, Document
 
 
 class HashableIndexMapperCellDocID(IIndexMapperCell):

@@ -105,7 +105,10 @@ def declare_online_model_base(convertor: SchemaConvertor, db_name='online'):
 
         @staticmethod
         def add(point):
-            return BaseOnlineDataModel._session_data.append(point)
+            BaseOnlineDataModel._session_data.append(point)
+            if len(BaseOnlineDataModel._session_data) > 9:
+                BaseOnlineDataModel.commit()
+            return None
 
         @staticmethod
         def commit():

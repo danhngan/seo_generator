@@ -1,6 +1,6 @@
-from big_seo.llm_arch.llmodel import ILLModel
+from big_seo.llm.llmodel import ILLModel
 from langchain_openai import ChatOpenAI
-from big_seo.llm_arch.core.common import IPrompt
+from big_seo.llm.core.common import IPrompt
 
 
 class SimplePrompt(IPrompt):

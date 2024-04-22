@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from abc import ABC, abstractmethod
 
-from big_seo.llm_arch.core.common import IPrompt
+from big_seo.llm.core.common import IPrompt
 
 
 class ILLModel(ABC):

@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from abc import ABC, abstractmethod
 
-from big_seo.llm_arch.retriever import IRetriever
-from big_seo.llm_arch.llmodel import ILLModel
-from big_seo.llm_arch.embedding_model import IEmbedding
+from big_seo.llm.retriever import IRetriever
+from big_seo.llm.llmodel import ILLModel
+from big_seo.llm.embedding_model import IEmbedding
 
 
 class IAssistant(ABC):
