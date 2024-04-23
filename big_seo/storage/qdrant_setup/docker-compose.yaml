@@ -7,27 +7,27 @@ services:
       - 6333:6333
       - 6334:6334
     networks:
-      - web
+      - qdrant
     volumes:
-      - qdrant:/qdrant/storage:z
-      - qdrant-tls:/qdrant/tls:z
-      - qdrant-config:/qdrant/config:z
+      - qdrant2:/qdrant/storage:z
+      - qdrant-tls2:/qdrant/tls:z
+      - qdrant-config2:/qdrant/config:z
   
 
 volumes:
-  qdrant:
+  qdrant2:
     driver: local
     driver_opts:
       type: none
       device: "./data"
       o: bind
-  qdrant-tls:
+  qdrant-tls2:
     driver: local
     driver_opts:
       type: none
       device: "./tls"
       o: bind
-  qdrant-config:
+  qdrant-config2:
     driver: local
     driver_opts:
       type: none
@@ -36,5 +36,5 @@ volumes:
 
 
 networks:
-  web:
+  qdrant:
     driver: bridge
