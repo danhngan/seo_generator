@@ -68,23 +68,28 @@ class DirectUrlCrawler(AbstractSimpleCrawler):
         self.proxy = proxy
         self.webpage_data_controller = webpage_data_controller
 
-    def crawl(self, url: str):
-        if not DirectUrlCrawler.check_valid_url(url):
-            raise TypeError('not a url')
-        page = self.webpage_data_controller.create(page_id=uuid.uuid4().bytes,
-                                                   url=url,
-                                                   domain=url.split('/')[2],
-                                                   title=url,
-                                                   ingestion_time=datetime.now(),
-                                                   full_content='',
-                                                   headings='{}',
-                                                   main_content='',
-                                                   keywords=[''],
-                                                   rank=0)
-        self._get_full_result_content(page)
-        return [page]
+    def crawl(self, urls: list[str]):
+        pages = []
+        for url in urls:
+            print(url)
+            if not DirectUrlCrawler.check_valid_url(url):
+                raise TypeError('not a url')
+            page = self.webpage_data_controller.create(page_id=uuid.uuid4().bytes,
+                                                       url=url,
+                                                       domain=url.split(
+                                                           '/')[2],
+                                                       title=url,
+                                                       ingestion_time=datetime.now(),
+                                                       full_content='',
+                                                       headings='{}',
+                                                       main_content='',
+                                                       keywords=[''],
+                                                       rank=0)
+            self._get_full_result_content(page)
+            pages.append(page)
+        return pages
 
-    @classmethod
+    @staticmethod
     def check_valid_url(url: str):
         if isinstance(url, str) \
                 and url.startswith('http') \

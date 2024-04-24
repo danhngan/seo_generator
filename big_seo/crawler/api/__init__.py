@@ -39,15 +39,15 @@ class DirectCrawler:
     def __init__(self):
         self.proxy = NoneProxy()
         connect_db()
-        self.web_page_data_controller = MongoWebPageDataController()
+        self.webpage_data_controller = MongoWebPageDataController()
 
         self.crawler = DirectUrlCrawler(
-            db_io_controller=self.web_page_data_controller,
-            web_page_data_controller=self.web_page_data_controller,
+            db_io_controller=self.webpage_data_controller,
+            webpage_data_controller=self.webpage_data_controller,
             proxy=self.proxy)
 
-    def search(self, url: str):
-        return self.crawler.crawl(url=url)
+    def search(self, urls: list[str]):
+        return self.crawler.crawl(urls=urls)
 
 
 class UpToDateCrawler:
