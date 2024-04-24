@@ -1,0 +1,13 @@
+langchain
+langchain-google-genai
+langchain-openai
+llama-index
+llama-index-embeddings-huggingface
+numpy
+selenium
+bs4
+mongoengine
+qdrant-client
+python-dotenv
+vertexai
+

@@ -7,7 +7,7 @@ services:
       - 6333:6333
       - 6334:6334
     networks:
-      - qdrant
+      - seo
     volumes:
       - qdrant2:/qdrant/storage:z
       - qdrant-tls2:/qdrant/tls:z
@@ -36,5 +36,5 @@ volumes:
 
 
 networks:
-  qdrant:
+  seo:
     driver: bridge
